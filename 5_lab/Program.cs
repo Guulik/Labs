@@ -11,6 +11,11 @@ namespace _5_lab
             return Sqrt(Pow(x2 - x1, 2) + Pow(y2 - y1, 2));
         }
 
+        static int ReadInt()//для лучшей читаемости
+        {
+            var num = ReadLine();
+            return Convert.ToInt32(num);
+        }
         static void Main(string[] args)
         {
             //первая буква перед x или y - сокращение от английского названия фигуры
@@ -21,7 +26,7 @@ namespace _5_lab
             double distance;
 
             WriteLine("Enter 2 coordinates of the second point: ");
-            (px2,py2) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));//Коретжное присваивание
+            (px2,py2) = (ReadInt(), ReadInt());//Коретжное присваивание
 
             distance = dist(px1,px2,py1,py2);
             WriteLine(distance);
@@ -31,14 +36,14 @@ namespace _5_lab
             int A, B, C;
 
             WriteLine("Enter A, B, C: ");
-            (A, B, C) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (A, B, C) = (ReadInt(), ReadInt(), ReadInt());
 
             WriteLine($"AC= {C-A} BC= {C-B} Sum= {2*C-A-B}");//Для вывода нескольких значений используем интерполяцию
             
 
             //Task 3
             WriteLine("Enter A, B, C again: ");
-            (A, B, C) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (A, B, C) = (ReadInt(), ReadInt(), ReadInt());
 
             if ((A < C && B > C) || (A > C && B < C))
             {
@@ -54,9 +59,9 @@ namespace _5_lab
             int rx1, ry1, rx2, ry2;
 
             WriteLine("Enter 2 coordinates of the first point of rectangle: ");
-            (rx1, ry1) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (rx1, ry1) = (ReadInt(), ReadInt());
             WriteLine("Enter 2 coordinates of the second point of rectangle: ");
-            (rx2, ry2) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (rx2, ry2) = (ReadInt(), ReadInt());
 
             WriteLine($"Rectangle`s square= {Abs((rx2 - rx1) * (ry2 - ry1))}, perimeter= {2 * Abs(rx2 - rx1 + (ry2 - ry1))}");
 
@@ -66,11 +71,11 @@ namespace _5_lab
             double ta, tb, tc;
 
             WriteLine("Enter 2 coordinates of the first point of triangle: ");
-            (tx1, ty1) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (tx1, ty1) = (ReadInt(), ReadInt());
             WriteLine("Enter 2 coordinates of the second point of triangle: ");
-            (tx2, ty2) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (tx2, ty2) = (ReadInt(), ReadInt());
             WriteLine("Enter 2 coordinates of the third point of triangle: ");
-            (tx3, ty3) = (Convert.ToInt32(ReadLine()), Convert.ToInt32(ReadLine()));
+            (tx3, ty3) = (ReadInt(), ReadInt());
 
             ta = dist(tx1, tx2, ty1, ty2);
             tb = dist(tx2, tx3, ty2, ty3);
