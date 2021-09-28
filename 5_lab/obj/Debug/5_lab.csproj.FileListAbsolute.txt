@@ -1,0 +1,7 @@
+E:\Visual Studio\repos\Learn C#\5_lab\bin\Debug\5_lab.exe.config
+E:\Visual Studio\repos\Learn C#\5_lab\bin\Debug\5_lab.exe
+E:\Visual Studio\repos\Learn C#\5_lab\bin\Debug\5_lab.pdb
+E:\Visual Studio\repos\Learn C#\5_lab\obj\Debug\5_lab.csproj.AssemblyReference.cache
+E:\Visual Studio\repos\Learn C#\5_lab\obj\Debug\5_lab.csproj.CoreCompileInputs.cache
+E:\Visual Studio\repos\Learn C#\5_lab\obj\Debug\5_lab.exe
+E:\Visual Studio\repos\Learn C#\5_lab\obj\Debug\5_lab.pdb
