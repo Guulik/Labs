@@ -10,9 +10,12 @@ namespace _5_lab
         {
             return Sqrt(Pow(x2 - x1, 2) + Pow(y2 - y1, 2));
         }
+
         static void Main(string[] args)
         {
-            
+            //первая буква перед x или y - сокращение от английского названия фигуры
+            //p-plane, r-rectangle, t-triangle
+
             //task 1
             int px1=2, py1=6, px2, py2;
             double distance;
