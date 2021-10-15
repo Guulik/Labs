@@ -72,18 +72,31 @@ namespace _11_lab
         }
         static void Main(string[] args)
         {
-            WriteLine("First task:");
-            first_task();
-            WriteLine("Second task:");
-            second_task();
-            WriteLine("Third task:");
-            third_task();
-            WriteLine("Fourth task:");
-            fourth_task();
-            WriteLine("Fifth task:");
-            fifth_task();
-            WriteLine("Sixth task:");
-            sixth_task();
+            WriteLine("Enter task number");
+            int n = ReadInt();
+            switch (n)
+            {
+                case 1:
+                    first_task();
+                    break;
+                case 2:
+                    second_task();
+                    break;
+                case 3:
+                    third_task();
+                    break;
+                case 4:
+                    fourth_task();
+                    break;
+                case 5:
+                    fifth_task();
+                    break;
+                case 6:
+                    sixth_task();
+                    break;
+                
+            }
+            ReadKey();
         }
     }
 }

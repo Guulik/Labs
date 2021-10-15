@@ -23,9 +23,9 @@ namespace _9_Lab
         }
         static void third_task()
         {
-            WriteLine("Enter number of the current day and current weekday");
+            WriteLine("Enter number of the current day and weekday of 1 january" );
             int K = ReadInt(), N = ReadInt();
-            WriteLine($"{N + K % 7 - 1} is weekday number;");
+            WriteLine($"{(N+K-2)%7+1} is weekday number;");
         }
         static void fourh_task()
         {
@@ -42,16 +42,27 @@ namespace _9_Lab
         }
         static void Main(string[] args)
         {
-            WriteLine("First task:");
-            first_task();
-            WriteLine("Second task:");
-            second_task();
-            WriteLine("Third task:");
-            third_task();
-            WriteLine("Fourth task:");
-            fourh_task();
-            WriteLine("Fifth task:");
-            fifth_task();
+            WriteLine("Enter task number");
+            int n = ReadInt();
+            switch (n)
+            {
+                case 1:
+                    first_task();
+                    break;
+                case 2:
+                    second_task();
+                    break;
+                case 3:
+                    third_task();
+                    break;
+                case 4:
+                    fourh_task();
+                    break;
+                case 5:
+                    fifth_task();
+                    break;
+                
+            }
             ReadKey();
         }
     }
